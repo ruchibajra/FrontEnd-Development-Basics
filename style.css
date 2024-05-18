@@ -1,10 +1,25 @@
-h1{
-    color: rgb(245, 122, 14);
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
 }
+
+#navbar{
+    height: 60px;
+    background-color: black;
+}
+
 button{
-    color: rgb(0, 0, 0);
-    background-color: burlywood;
+    background-color: orange;
 }
-body{
-    background-color: rgb(0, 0, 255);
+
+#logo{
+    font-size: 23px;
+    color: orange;
 }
+
+a{
+    margin-right: 200px;
+    text-decoration: nonse;
+}
+
