@@ -22,7 +22,7 @@ div{
     }
 }
 
-@media (min-width: 200px) and (max-width: 300px){
+@media (min-width: 200px) and (max-width: 300px){ /*two conditions can also be implemented by AND keyword in media queries*/
     div{
         background-color: black;
     }
