@@ -1,40 +1,29 @@
-.navbar{
-    background-color: pink;
-    display: flex; /*all items of list are included to the container div*/
-    justify-content: space-evenly;
+div{
+    height: 50px;
+    width: 50px;
+    background-color: pink; /*default color is PINK*/
 }
 
-a{
-    text-decoration: none;
-    color: black;
+@media (width : 400px){
+    div{
+        background-color: red; /*when the width is exactly 400px color is RED*/
+    }
 }
 
-li{
-    list-style-type: none; /*bullet of unorder list is removed*/
+@media (min-width : 600px){
+    div{
+        background-color: purple; /*when the width is minimum of 600px and above than 600, the color becomes PURPLE*/
+    }
 }
 
-.outer{
-    height: 400px;
-    width: 400px;
-    background-color: brown;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.inner{
-    height: 100px;
-    width: 100px;
-    background-color: blueviolet;
-    
+@media (max-width : 600px){
+    div{
+        background-color: green; /*when the width is maximum of 600px and less than 600, the color becomes GREEN*/
+    }
 }
 
-
-/* 
-1. create a nav bar with 4 options in the form of anchor tags inside list items.
-Use flexbox to space them evenly in a single line.
-
-2. Use flex box to center one div inside another div
-
-
-3. which has higher priority: align items or align self
-Ans: Align self has higher priority. As align items are used for containers (flex) and align self are used for items (flex)*/
+@media (min-width: 200px) and (max-width: 300px){
+    div{
+        background-color: black;
+    }
+}
