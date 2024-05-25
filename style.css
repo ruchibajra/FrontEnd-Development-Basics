@@ -1,36 +1,25 @@
-/*Practice Set 7
-Qs: Add a media query to implement the following:
-- the color of a div changes to green for viewport width less than 300px
-- the color of a div changes to pink for width between 300px & 400px
-- the color of a div changes to blue for width above 600px*/
 div{
     height: 200px;
     width: 200px;
     background-color: chocolate;
+    border: 2px solid black;
+    transition-property: all; /*transition applied to all: hover and active both*/
+    transition-duration: 2s;
+    /* transition-timing-function: steps(5); */
+    transition-timing-function: ease-in;
+    transition-delay: 1s; /*pauses 1second to perform the function*/
+
 }
 
-
-/* the color of a div changes to green for viewport width less than 300px */
-@media (max-width: 300px){ /*0 px width to 300 px width - color must be green*/
-    div{
-        background-color: green;
-    }
+div:hover{
+     background-color: aqua;
+     color: white;
+     font-size: 20px;
 }
 
-
-/* the color of a div changes to pink for width between 300px & 400px */
-@media (min-width: 300px) and (max-width : 400px){ 
-    div{
-        background-color: pink;
-    }
+div:active{
+    background-color: pink;
 }
 
-
-/* - the color of a div changes to blue for width above 600px */
-@media (min-width: 600px){ /*min width is 600 px, from 600 px width all BLUE color*/
-    div{
-        background-color: blue;
-    }
-}
-
-
+/* hover: mouse touch on div
+active: mouse click and hold */
